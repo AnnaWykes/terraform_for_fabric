@@ -26,7 +26,7 @@ jobs:
 
       # Step 3: Set up Azure credentials using the service principal
       - name: Set up Azure credentials
-      - uses: azure/login@v2
+        uses: azure/login@v2
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
