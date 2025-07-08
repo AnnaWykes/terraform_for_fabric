@@ -26,12 +26,9 @@ jobs:
 
       # Step 3: Set up Azure credentials using the service principal
       - name: Set up Azure credentials
-        uses: azure/login@v1
+      - uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       # Step 4: Initialize Terraform
       - name: Terraform Init
