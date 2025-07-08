@@ -20,6 +20,5 @@ provider "fabric" {
     use_cli = true
 }
 
-#az login --allow-no-subscriptions --tenant 679ed0b9-425d-45ef-b209-90449470c549 --scope api://f75af6d3-891a-4395-9fed-c7c5cbcb04f8/.default
 
  
