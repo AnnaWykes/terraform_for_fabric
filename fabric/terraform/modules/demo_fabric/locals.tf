@@ -1,0 +1,3 @@
+locals {
+    path = path.module
+}
