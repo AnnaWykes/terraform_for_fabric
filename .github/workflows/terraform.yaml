@@ -24,7 +24,7 @@ jobs:
         with:
           terraform_version: '1.8'  # specify the Terraform version you need
 
-      # Step 3: Set up Azure credentials using the service principal
+      # Step 3: Set up Azure credentials using the service principal ?
       - name: Set up Azure credentials
         uses: azure/login@v2
         with:
